@@ -19,7 +19,6 @@ const ContactForm = () => {
 
   const handleSubmit = evt => {
     evt.preventDefault();
-    //console.log(contacts);
     if (contacts.find(contact => contact.name === name)) {
       window.alert(`Контакт ${name} вже є в списку`);
       return;
